@@ -9,10 +9,10 @@ RUN         chmod +x /scripts/entrypoint.sh \
 VOLUME      [ "/data" ]
 VOLUME      [ "/secrets" ]
 VOLUME      [ "/ssh" ]
-ENV         build=0.1.27
+ENV         build=0.1.28
 ENTRYPOINT  [ "/scripts/entrypoint.sh" ]
 WORKDIR     /data
 LABEL       maintainer="David Sanders" \
             org="DGSD Consulting, Inc." \
             base_image="hashicorp/terraform:0.12.10" \
-            build="0.1.27"
+            build="0.1.28"
